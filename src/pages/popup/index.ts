@@ -1,4 +1,5 @@
 import App from './components/App.svelte'
 import './index.css'
 
-new App({ target: document.getElementById('app') })
+// eslint-disable-next-line no-new
+new App({ target: document.getElementById('app') as HTMLElement })
