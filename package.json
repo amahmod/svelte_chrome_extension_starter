@@ -5,7 +5,6 @@
         "email": "dev.amahmod@gmail.com"
     },
     "description": "Chrome extension starter template with Vite, Svelte and Typescript",
-    "private": true,
     "version": "0.0.0",
     "type": "module",
     "scripts": {
@@ -15,9 +14,8 @@
         "format": "prettier --write './src/**/*.{js,svelte,html,ts}'",
         "lint": "eslint './src/**/*.{js,ts,svelte}'",
         "lint:fix": "eslint --fix './src/**/*.{js,ts,svelte}'",
-        "preview": "vite preview",
-        "zip": "node scripts/build_zip.js",
-        "prepare": "husky install"
+        "prepare": "husky install",
+        "zip": "node scripts/build_zip.js"
     },
     "lint-staged": {
         "*.{js,ts,svelte}": [
