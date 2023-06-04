@@ -13,3 +13,11 @@ docker-data/
 pnpm-lock.yaml
 package-lock.json
 yarn.lock
+
+postcss.config.js
+tsconfig.json
+tsconfig.node.json 
+vite.config.ts
+.eslintrc.cjs
+.prettierrc.cjs
+svelte.config.js
