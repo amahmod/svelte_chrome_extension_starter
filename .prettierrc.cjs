@@ -8,7 +8,7 @@ module.exports = {
     bracketSpacing: true,
     bracketSameLine: true,
     arrowParens: 'avoid',
-    plugins: ['prettier-plugin-svelte'],
+    plugins: ['prettier-plugin-svelte', 'prettier-plugin-tailwindcss'],
     svelteSortOrder: 'options-scripts-markup-styles',
     pluginSearchDirs: ['.'],
     overrides: [{ files: '*.svelte', options: { parser: 'svelte' } }]
