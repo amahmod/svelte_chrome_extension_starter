@@ -12,11 +12,18 @@
         "build": "vite build && npm run zip",
         "check": "svelte-check --tsconfig ./tsconfig.json",
         "dev": "vite",
-        "preview": "vite preview",
-        "zip": "node scripts/build_zip.js",
+        "format": "prettier --write './src/**/*.{js,svelte,html,ts}'",
         "lint": "eslint './src/**/*.{js,ts,svelte}'",
         "lint:fix": "eslint --fix './src/**/*.{js,ts,svelte}'",
-        "format": "prettier --write './src/**/*.{js,svelte,html,ts}'"
+        "preview": "vite preview",
+        "zip": "node scripts/build_zip.js",
+        "prepare": "husky install"
+    },
+    "lint-staged": {
+        "*.{js,ts,svelte}": [
+            "svelte-check",
+            "npm run lint:fix"
+        ]
     },
     "devDependencies": {
         "@crxjs/vite-plugin": "2.0.0-beta.17",
@@ -36,6 +43,8 @@
         "eslint-plugin-prettier": "^4.2.1",
         "eslint-plugin-svelte": "^2.30.0",
         "eslint-plugin-svelte3": "^4.0.0",
+        "husky": "^8.0.3",
+        "lint-staged": "^13.2.2",
         "postcss": "^8.4.24",
         "prettier": "^2.8.8",
         "prettier-plugin-svelte": "^2.10.1",
