@@ -9,9 +9,10 @@
         "checkJs": true,
         "isolatedModules": true,
         "paths": {
-            "$/*": ["./src/*"],
-            "$pages": ["./src/pages/*"],
-            "$lib/*": ["./src/lib/*"]
+            "~*": ["./src/*"],
+            "~services": ["./src/services/*"],
+            "~lib": ["./src/lib/*"],
+            "~components": ["./src/components/*"]
         },
         "esModuleInterop": true,
         "forceConsistentCasingInFileNames": true,
