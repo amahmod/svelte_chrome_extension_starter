@@ -18,9 +18,9 @@
         "zip": "node scripts/build_zip.js"
     },
     "lint-staged": {
-        "*.{js,ts,svelte}": [
+        "src/**/*.{js,ts,svelte}": [
             "svelte-check",
-            "npm run lint:fix"
+            "eslint --fix"
         ]
     },
     "devDependencies": {
