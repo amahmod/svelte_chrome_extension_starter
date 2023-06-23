@@ -46,7 +46,14 @@ module.exports = {
         ],
         'import/prefer-default-export': 0,
         'no-param-reassign': 0,
-        'import/no-extraneous-dependencies': 0
+        'import/no-extraneous-dependencies': 0,
+        '@typescript-eslint/naming-convention': [
+            'error',
+            {
+                selector: 'variableLike',
+                format: ['snake_case', 'camelCase']
+            }
+        ]
     },
     settings: {
         'import/parsers': {
