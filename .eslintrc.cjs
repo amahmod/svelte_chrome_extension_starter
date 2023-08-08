@@ -9,6 +9,7 @@ module.exports = {
         'plugin:import/typescript',
         'airbnb-base',
         'airbnb-typescript/base',
+        'plugin:svelte/recommended'
         'plugin:prettier/recommended'
     ],
     globals: { chrome: true },
@@ -16,7 +17,7 @@ module.exports = {
     overrides: [
         {
             files: ['*.svelte'],
-            processor: 'svelte3/svelte3',
+            parser: "svelte-eslint-parser",
             parserOptions: { parser: '@typescript-eslint/parser' }
         }
     ],
@@ -28,7 +29,7 @@ module.exports = {
         extraFileExtensions: ['.svelte'],
         parser: '@typescript-eslint/parser'
     },
-    plugins: ['svelte3', 'prettier', '@typescript-eslint'],
+    plugins: ['prettier', '@typescript-eslint'],
     root: true,
     rules: {
         'prettier/prettier': 'error',
