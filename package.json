@@ -27,6 +27,7 @@
         "@crxjs/vite-plugin": "1.0.14",
         "@sveltejs/vite-plugin-svelte": "^3.0.1",
         "@tsconfig/svelte": "^5.0.2",
+        "@types/chrome": "^0.0.263",
         "@typescript-eslint/eslint-plugin": "^6.15.0",
         "@typescript-eslint/parser": "^6.15.0",
         "archiver": "^6.0.1",
