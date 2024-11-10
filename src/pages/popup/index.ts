@@ -1,5 +1,7 @@
+import { mount } from 'svelte'
 import App from './components/App.svelte'
 import './index.css'
 
-// eslint-disable-next-line no-new
-new App({ target: document.getElementById('app') as HTMLElement })
+export const app = mount(App, {
+    target: document.getElementById('app') as HTMLElement
+})
