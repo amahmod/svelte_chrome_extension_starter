@@ -14,7 +14,7 @@
         "format": "prettier --write './src/**/*.{js,svelte,html,ts}'",
         "lint": "eslint './src/**/*.{js,ts,svelte}'",
         "lint:fix": "eslint --fix './src/**/*.{js,ts,svelte}'",
-        "prepare": "husky install",
+        "prepare": "husky",
         "zip": "node scripts/build_zip.js"
     },
     "lint-staged": {
