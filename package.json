@@ -12,8 +12,8 @@
         "check": "svelte-check --tsconfig ./tsconfig.json",
         "dev": "vite",
         "format": "prettier --write './src/**/*.{js,svelte,html,ts}'",
-        "lint": "eslint './src/**/*.{js,ts,svelte}'",
-        "lint:fix": "eslint --fix './src/**/*.{js,ts,svelte}'",
+        "lint": "eslint_d './src/**/*.{js,ts,svelte}'",
+        "lint:fix": "eslint_d --fix './src/**/*.{js,ts,svelte}'",
         "prepare": "husky",
         "zip": "node scripts/build_zip.js"
     },
